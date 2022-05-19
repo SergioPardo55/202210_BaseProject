@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-6">
+    <table class="table" id="series">
+      <thead>
+        <tr>
+          <th class="h4">id</th>
+          <th class="h4">Name</th>
+          <th class="h4">Number of members</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr (click)="onSelected(c)" *ngFor="let c of bandas">
+          <td class="table-active">
+            <dd>{{c.id}}</dd>
+          </td>
+          <td class="table-active">
+            <dd>{{c.name}}</dd>
+          </td>
+          <td class="table-active">
+            <dd>{{c.numberOfMembers}}</dd>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          Average number of members (rounded up): {{ promedio }}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-4">
+    <div *ngIf="activate">
+      <app-banda-detail [selectedBanda]="selectedBanda" ></app-banda-detail>
+    </div>
+  </div>
+  </div>
+  <div class="row" id="divMensajeFinal">
+    <p id="mensajeFinal">
+      Listen to them in all Platforms!
+    </p>
+  </div>
+</div>

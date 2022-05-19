@@ -1,3 +1,26 @@
-* [lang^=en] {
-  color: green;
+#titulo{
+  background-color:rgb(235, 237, 237);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#imagenPrincipal{
+  background-color:rgb(235, 237, 237);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#divImagen{
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
 }
